@@ -4,17 +4,35 @@
     margin: 0%;
 }
 
-.container{
-    margin: 20px;
-    padding: 10px;
+.container1{
+    margin: 5px;
+    padding: 5px;
     float: left;
     box-sizing: border-box;
     background-color: aqua;
-    height: 400px;
-    width: 200px;
-    
-
+    height: 250px;
+    width: 32%
 }
+.container2{
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    box-sizing: border-box;
+    background-color: aqua;
+    height: 250px;
+    width: 32%
+}
+.container3{
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    box-sizing: border-box;
+    background-color: aqua;
+    height: 250px;
+    width: 32%
+    
+}
+
 .box {
     position: relative;
     box-sizing: border-box;
@@ -31,3 +49,29 @@ p{
     margin-top: 40px;
     position: relative;
 }
+@media (min-width: 992px) {
+    .container1, .container2, .container3 {
+     float: left;
+     border: 1px solid black;
+     width: 32%;
+  }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+.container1, .container2{
+    float: left;
+    border: 1px solid black;
+    width: 48%;
+}
+.container3{
+    float: left;
+    border: 1px solid black;
+    width: 100%;
+}
+}
+@media (max-width: 768px) {
+    .container1, .container2, .container3 {
+     float: left;
+     border: 1px solid black;
+     width: 100%;
+  }
+    }
